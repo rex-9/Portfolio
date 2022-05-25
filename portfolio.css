@@ -1,0 +1,70 @@
+.welcome {
+    width: 90px;
+    height: 28px;
+
+    /* Theme 2 / Subhead 1 */
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    /* identical to box height, or 140% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Theme 2 / Neutral 1 */
+
+    color: #28352F;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.nav {
+    display: flex;
+}
+
+.background {
+    background-image: url('./assets/header-illustration-mobile.svg');
+    background-repeat: no-repeat;
+}
+
+.menu {
+    position:absolute;
+    top:0;
+    right:0;
+    width: 40px;
+    height: 40px;
+    right: 24px;
+
+    border-radius: 8px;
+}
+
+.intro {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #172B4D;
+}
+
+.margin-10px {
+    margin: 10px;
+}
