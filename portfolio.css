@@ -1,3 +1,19 @@
+.primary-color {
+    color: #172B4D;
+}
+
+.secondary-color {
+    color: #17a939;
+}
+
+.center {
+    text-align: center;
+}
+
+.margin-top-25px {
+    margin-top: 25px;
+}
+
 .welcome {
     width: 90px;
     height: 28px;
