@@ -65,6 +65,35 @@ p {
     color: #172B4D;
 }
 
+header {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #172B4D;
+}
+
 .margin-10px {
     margin: 10px;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 15%;
+    height: 200px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+    }
+    
+    .card:hover {
+      cursor: pointer;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      width: 20%;
+      height: 250px;
+    }
