@@ -17,7 +17,7 @@
 .welcome {
   width: 90px;
   height: 28px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -55,13 +55,11 @@
   right: 0;
   width: 40px;
   height: 40px;
-  right: 24px;
-
   border-radius: 8px;
 }
 
 .intro {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -70,7 +68,7 @@
 }
 
 p {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -80,7 +78,7 @@ p {
 }
 
 header {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
