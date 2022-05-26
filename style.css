@@ -1,3 +1,7 @@
+.toolbar {
+  display: flex;
+}
+
 .primary-color {
   color: #172b4d;
 }
@@ -12,6 +16,10 @@
 
 .margin-top-25px {
   margin-top: 25px;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 .welcome {
