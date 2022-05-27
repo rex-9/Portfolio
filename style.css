@@ -182,6 +182,7 @@ header {
 }
 
 .see-project {
+  cursor: pointer;
   font-size: large;
   height: 55px;
   padding: 0 25px 0 25px;
