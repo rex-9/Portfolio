@@ -19,10 +19,19 @@
 }
 
 .language-container {
-  height: 88px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
+}
+
+.language {
+  background-color: #EBF0EE;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 5px;
+  font-size: 12px;
 }
 
 .margin-top-25px {
@@ -120,7 +129,6 @@ header {
 
 .logo-title {
   grid-row: 1;
-  border-radius: 25px 25px 0 0;
 }
 
 .logo-container {
@@ -130,23 +138,28 @@ header {
 .items {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 15px;
 }
 
 .item {
   background-color: white;
   border-radius: 15px;
   padding: 8px;
-  margin-left: 5px;
+  margin-right: 8px;
   font-size: 14.5px;
+  height: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
 }
 
 .card {
   margin: 25px;
-  box-shadow:
-    11px 11px 22px #bebebe,
-    -11px -11px 22px #fff;
   height: 480px;
   width: 330px;
+  border: 2px solid #ebf0ee;
   border-radius: 25px;
   display: grid;
   grid-template-rows: 45% 55%;
@@ -168,17 +181,6 @@ header {
 
 .card-name {
   height: 40px;
-}
-
-.language {
-  background-color: linear-gradient(145deg, #cacaca, #f0f0f0);
-  box-shadow:
-    11px 11px 22px #bebebe,
-    -11px -11px 22px #fff;
-  border-radius: 25px;
-  padding: 10px;
-  margin-left: 5px;
-  font-size: 14.5px;
 }
 
 .see-project {
@@ -218,4 +220,8 @@ textarea {
 
 .mailme {
   color: #42526e;
+}
+
+li {
+  list-style-type: none;
 }
