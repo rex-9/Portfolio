@@ -1,4 +1,4 @@
-.toolbar {
+.flex {
   display: flex;
 }
 
@@ -11,7 +11,18 @@
 }
 
 .center {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
   text-align: center;
+}
+
+.language-container {
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .margin-top-25px {
@@ -25,7 +36,6 @@
 .welcome {
   width: 90px;
   height: 28px;
-  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -67,7 +77,6 @@
 }
 
 .intro {
-  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -99,21 +108,113 @@ header {
   margin: 10px;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: 15%;
-  height: 200px;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5%;
+.flash-card {
+  height: 350px;
+  width: 330px;
+  background-color: #ebf0ee;
+  border-radius: 25px;
+  margin: 25px 0 0 0;
+  display: grid;
+  grid-template-rows: 60% 40%;
 }
 
-.card:hover {
-  cursor: pointer;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-  width: 20%;
-  height: 250px;
+.logo-title {
+  grid-row: 1;
+  border-radius: 25px 25px 0 0;
+}
+
+.logo-container {
+  padding-top: 20px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: white;
+  border-radius: 15px;
+  padding: 8px;
+  margin-left: 5px;
+  font-size: 14.5px;
+}
+
+.card {
+  margin: 25px;
+  box-shadow:
+    11px 11px 22px #bebebe,
+    -11px -11px 22px #fff;
+  height: 480px;
+  width: 330px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-rows: 45% 55%;
+}
+
+.font {
+  font-family: 'Inter', sans-serif;
+}
+
+.cover {
+  grid-row: 1;
+  background-color: #ebf0ee;
+  border-radius: 25px 25px 0 0;
+}
+
+.content {
+  grid-row: 2;
+}
+
+.card-name {
+  height: 40px;
+}
+
+.language {
+  background-color: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:
+    11px 11px 22px #bebebe,
+    -11px -11px 22px #fff;
+  border-radius: 25px;
+  padding: 10px;
+  margin-left: 5px;
+  font-size: 14.5px;
+}
+
+.see-project {
+  font-size: large;
+  height: 55px;
+  padding: 0 25px 0 25px;
+  background-color: #36b37f;
+  border-radius: 25px;
+  border: 0;
+  color: white;
+}
+
+.divider {
+  border-top: 8px solid #36b37f;
+  border-radius: 5px;
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.title {
+  padding: 30px 0 25px 0;
+}
+
+.input {
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 150px;
+  width: 300px;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+.mailme {
+  color: #42526e;
 }
