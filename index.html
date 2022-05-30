@@ -199,33 +199,34 @@
             <header class="title">I'm always interested in hearing about new projects,<br>
                 so if you'd like to chat please get in touch.
             </header>
-            <div class="center">
-                <form action="#">
-                    <input class="input" type="text" id="fname" placeholder="   Full Name"><br><br>
-                    <input class="input" type="text" id="lname" placeholder="   Email Address"><br><br>
-                    <textarea class="font" id="textareaid" name="textareaname" rows="4" cols="50" maxlength="200">  Enter text here.
-                    </textarea><br><br>
-                    <input class="see-project font" type="submit" value="Get in touch">
-                </form>
-            </div>
-            <div class="center margin-top-25px">
-                <a href="">
-                    <img class="margin-10px" src="./assets/twitter.svg" alt="twitter">
-                </a>
-                <a href="">
-                    <img class="margin-10px" src="./assets/linkedin.svg" alt="linkedin">
-                </a>
-                <a href="">
-                    <img class="margin-10px" src="./assets/medium.svg" alt="medium">
-                </a>
-                <a href="">
-                    <img class="margin-10px" src="./assets/github.svg" alt="github">
-                </a>
-                <a href="">
-                    <img class="margin-10px" src="./assets/angellist.svg" alt="angellist">
-                </a>
-            </div>
-            <p class="font center mailme">htetnaing0814@gmail.com</p>
+            <footer>
+                <div class="center">
+                    <form action="https://formspree.io/f/{form_id}" method="post">
+                        <input required class="input" type="text" id="fname" placeholder="   Full Name" maxlength="30"><br><br>
+                        <input required class="input" type="email" id="email" placeholder="   Email Address"><br><br>
+                        <textarea required class="font" id="textareaid" placeholder="  Enter text here." name="textareaname" rows="4" cols="50" maxlength="500"></textarea><br><br>
+                        <button class="see-project font" type="submit">Get in touch</button>
+                    </form>
+                </div>
+                <div class="center margin-top-25px">
+                    <a href="">
+                        <img class="margin-10px" src="./assets/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="https://www.linkedin.com/in/htet-naing-b4882a1aa/">
+                        <img class="margin-10px" src="./assets/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="https://medium.com/@htetnaing0814">
+                        <img class="margin-10px" src="./assets/medium.svg" alt="medium">
+                    </a>
+                    <a href="https://github.com/htetnaing0814">
+                        <img class="margin-10px" src="./assets/github.svg" alt="github">
+                    </a>
+                    <a href="">
+                        <img class="margin-10px" src="./assets/angellist.svg" alt="angellist">
+                    </a>
+                </div>
+                <p class="font center mailme">htetnaing0814@gmail.com</p>
+            </footer>
         </section>
     </div>
 </body>
