@@ -20,7 +20,6 @@
 
 .language-container {
   height: 50px;
-  display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 40px;
@@ -32,6 +31,7 @@
   padding: 10px;
   margin-right: 5px;
   font-size: 12px;
+  float: left;
 }
 
 .margin-top-25px {
