@@ -76,7 +76,7 @@
   .contact-form-1 {
     position: absolute;
     top: 3800px;
-    left: 0px;
+    left: 0;
     background-image: url('./assets/contact-form-1-desktop.svg');
     width: 200px;
     height: 400px;
@@ -173,29 +173,29 @@
 
 .down-arrow {
   animation: bounce 1s alternate-reverse infinite;
+
   /* animation shorthand */
+
   /* animation: animation-name animation-duration animation-direction animation-iteration-count */
 }
 
-.see-project:hover {
- animation: pulse 1s alternate infinite;
-}
-
-@keyframes bounce{
-  0%{
+@keyframes bounce {
+  0% {
     transform: translateY(10px);
   }
-  100%{
+
+  100% {
     transform: translateY(-10px);
   }
 }
 
-@keyframes pulse{
-  0%{
+@keyframes pulse {
+  0% {
     transform: scale(1);
     background-color: #36b37f;
   }
-  100%{
+
+  100% {
     transform: scale(1.1);
     background-color: rgb(0, 238, 255);
     color: red;
@@ -243,7 +243,7 @@
   font-weight: 600;
   font-size: 25px;
   line-height: 28px;
-  padding: 5px 5px 5px 0px;
+  padding: 5px 5px 5px 0;
 
   /* identical to box height, or 140% */
 
@@ -348,12 +348,12 @@ header {
   width: 330px;
   border: 2px solid #ebf0ee;
   border-radius: 25px;
-  box-shadow: 2px 3px #888888;
+  box-shadow: 2px 3px #888;
   transition: box-shadow 1s;
 }
 
 .card:hover {
-  box-shadow: 8px 10px #666666;
+  box-shadow: 8px 10px #666;
 }
 
 .font {
@@ -395,6 +395,10 @@ header {
   border-radius: 15px;
   border: 0;
   color: white;
+}
+
+.see-project:hover {
+  animation: pulse 1s alternate infinite;
 }
 
 .divider {
