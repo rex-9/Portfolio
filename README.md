@@ -25,7 +25,7 @@ Author
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check [issue page](https://github.com/HtetNaing0814/Portfolio/issues).
+Feel free to check [issue page](https://github.com/HtetNaing0814/Rex/issues).
 
 Show your support
 Give a ⭐️ if you like this project!
