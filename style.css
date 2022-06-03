@@ -274,13 +274,18 @@
 }
 
 .menu {
-  padding: 15px;
+  padding: 5px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 18px;
+  right: 10px;
   width: 40px;
   height: 40px;
   border-radius: 8px;
+}
+
+.menu:hover {
+  background-color: white;
+  opacity: 0.75;
 }
 
 .intro {
