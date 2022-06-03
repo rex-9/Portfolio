@@ -40,15 +40,19 @@
   .input {
     height: 50px;
     width: 500px;
+    padding: 15px;
     border-radius: 10px;
     border: 2px solid #ebf0ee;
+    font-size: 20px;
   }
 
   textarea {
     height: 150px;
     width: 500px;
+    padding: 15px;
     border-radius: 10px;
-    padding-top: 10px;
+    border: 2px solid #ebf0ee;
+    font-size: 20px;
   }
 
   .crane {
@@ -79,7 +83,7 @@
     left: 0;
     background-image: url('./assets/contact-form-1-desktop.svg');
     width: 200px;
-    height: 400px;
+    height: 330px;
     background-repeat: no-repeat;
     z-index: -1;
   }
@@ -89,8 +93,8 @@
     top: 3950px;
     left: 400px;
     background-image: url('./assets/contact-form-2-desktop.svg');
-    width: 200px;
-    height: 400px;
+    width: 120px;
+    height: 100px;
     background-repeat: no-repeat;
     z-index: -1;
   }
@@ -101,7 +105,7 @@
     right: -15px;
     background-image: url('./assets/contact-form-3-desktop.svg');
     width: 200px;
-    height: 600px;
+    height: 500px;
     background-repeat: no-repeat;
     z-index: -1;
   }
@@ -129,13 +133,18 @@
     height: 50px;
     width: 300px;
     border-radius: 10px;
+    border: 2px solid #ebf0ee;
+    padding: 10px;
+    font-size: 20px;
   }
 
   textarea {
     height: 150px;
     width: 300px;
     border-radius: 10px;
-    padding-top: 10px;
+    border: 2px solid #ebf0ee;
+    padding: 10px;
+    font-size: 20px;
   }
 
   .crane {
@@ -226,6 +235,10 @@
   color: #17a939;
 }
 
+.no-hover {
+  pointer-events: none;
+}
+
 .center {
   display: flex;
   align-items: center;
@@ -238,7 +251,7 @@
 }
 
 .welcome {
-  margin: 15px;
+  margin: 10px;
   font-style: normal;
   font-weight: 600;
   font-size: 25px;
@@ -250,6 +263,10 @@
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+.welcome:hover {
+  color: rgb(74, 176, 210);
 }
 
 .nav {
@@ -340,6 +357,18 @@ header {
   color: black;
 }
 
+.profiles {
+  padding: 10px;
+  margin: 15px 5px 15px 5px;
+  border-radius: 5px;
+  height: 25px;
+  transition: background-color 0.5s;
+}
+
+.profiles:hover {
+  background-color: lightgreen;
+}
+
 .card {
   display: grid;
   grid-template-rows: 55% 45%;
@@ -412,7 +441,7 @@ header {
   border-top: 2px solid #c6ccdb;
   border-radius: 5px;
   width: 100%;
-  margin: 300px 0 50px 0;
+  margin: 250px 0 15px 0;
 }
 
 .mailme {
