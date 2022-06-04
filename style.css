@@ -24,6 +24,11 @@
 
   .title {
     padding: 30px 0 25px 0;
+    transition: 0.3s ease;
+  }
+
+  .title:hover {
+    transform: translate(15px);
   }
 
   .my-recent-works {
