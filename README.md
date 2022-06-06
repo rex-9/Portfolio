@@ -5,6 +5,10 @@ Rex, the full stack developer
 - HTML
 - CSS
 
+## Live Demo
+
+[Rex's portfolio](https://htetnaing0814.github.io/Rex/)
+
 ## Getting Started
 
 To get a local copy up and running:
@@ -21,9 +25,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-Here is the online version of Rex's portfolio
-
-https://htetnaing0814.github.io/Rex/
+Here is the online version of [Rex's portfolio](https://htetnaing0814.github.io/Rex/)
 
 ## Author
 👤 - Github: [@HtetNaing0814](https://github.com/Rex)
