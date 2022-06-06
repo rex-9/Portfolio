@@ -11,16 +11,20 @@ To get a local copy up and running:
 
 1. Clone this repository or download the zip folder:
 
-**``git clone https://github.com/HtetNaing0814/Portfolio``**
+**``git clone https://github.com/HtetNaing0814/Rex``**
 
-1. Navigate to the location of the folder in your machine:
+2. Navigate to the location of the folder in your machine:
 
 **``you@your-Pc-name:~$ cd <folder>``**
 
 To get a local copy up and running follow these simple example steps.
 
+3. Here is the online version of Rex's portfolio
+
+https://htetnaing0814.github.io/
+
 Author
-👤 - Github: [@HtetNaing0814](https://github.com/HtetNaing0814)
+👤 - Github: [@HtetNaing0814](https://github.com/Rex)
 
 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
