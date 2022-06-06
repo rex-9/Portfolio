@@ -1,11 +1,11 @@
-### Project Name
+# Project Name
 Rex, the full stack developer
 
-### Built With
+## Built With
 - HTML
 - CSS
 
-### Getting Started
+## Getting Started
 
 To get a local copy up and running:
 
@@ -25,19 +25,19 @@ Here is the online version of Rex's portfolio
 
 https://htetnaing0814.github.io/Rex/
 
-### Author
+## Author
 👤 - Github: [@HtetNaing0814](https://github.com/Rex)
 
-🤝 Contributing
+## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check [issue page](https://github.com/HtetNaing0814/Rex/issues).
 
-### Show your support
+## Show your support
 Give a ⭐️ if you like this project!
 
-### Acknowledgments
+## Acknowledgments
 [Microverse](https://bit.ly/MicroverseTN)
 
-### 📝 License
+## 📝 License
 This project is MIT licensed.
