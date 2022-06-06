@@ -21,7 +21,7 @@ To get a local copy up and running follow these simple example steps.
 
 3. Here is the online version of Rex's portfolio
 
-https://htetnaing0814.github.io/
+https://htetnaing0814.github.io/Rex/
 
 Author
 👤 - Github: [@HtetNaing0814](https://github.com/Rex)
