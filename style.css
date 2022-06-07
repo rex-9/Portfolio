@@ -18,7 +18,7 @@
   }
 
   .background {
-    background-image: url('./assets/header-illustration-desktop.svg');
+    background-image: url('./assets/header-ill-desktop.svg');
     background-repeat: no-repeat;
   }
 
@@ -77,33 +77,33 @@
     z-index: -1;
   }
 
-  .contact-form-1 {
+  .contact-form-ill-1 {
     position: absolute;
     top: 3800px;
     left: 0;
-    background-image: url('./assets/contact-form-1-desktop.svg');
+    background-image: url('./assets/contact-form-ill-1-desktop.svg');
     width: 200px;
     height: 330px;
     background-repeat: no-repeat;
     z-index: -1;
   }
 
-  .contact-form-2 {
+  .contact-form-ill-2 {
     position: absolute;
     top: 3950px;
     left: 400px;
-    background-image: url('./assets/contact-form-2-desktop.svg');
+    background-image: url('./assets/contact-form-ill-2-desktop.svg');
     width: 120px;
     height: 100px;
     background-repeat: no-repeat;
     z-index: -1;
   }
 
-  .contact-form-3 {
+  .contact-form-ill-3 {
     position: absolute;
     top: 3650px;
     right: -15px;
-    background-image: url('./assets/contact-form-3-desktop.svg');
+    background-image: url('./assets/contact-form-ill-3-desktop.svg');
     width: 200px;
     height: 500px;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@
   }
 
   .background {
-    background-image: url('./assets/header-illustration-mobile.svg');
+    background-image: url('./assets/header-ill-mobile.svg');
     background-repeat: no-repeat;
   }
 
@@ -168,11 +168,11 @@
     z-index: -1;
   }
 
-  .contact-form-mobile {
+  .contact-form-ill-mobile {
     position: absolute;
     top: 5900px;
     right: -110px;
-    background-image: url('./assets/contact-form-mobile.svg');
+    background-image: url('./assets/contact-form-ill-mobile.svg');
     width: 200px;
     height: 400px;
     background-repeat: no-repeat;
