@@ -3,11 +3,8 @@
     display: none;
   }
 
-  .mobile-nav {
-    display: none;
-  }
-
   .desktop-nav {
+    position: fixed;
     display: flex;
   }
 
@@ -18,7 +15,7 @@
   }
 
   .background {
-    background-image: url('./assets/header-illustration-desktop.svg');
+    background-image: url('./assets/header-ill-desktop.svg');
     background-repeat: no-repeat;
   }
 
@@ -82,33 +79,33 @@
     z-index: -1;
   }
 
-  .contact-form-1 {
+  .contact-form-ill-1 {
     position: absolute;
     top: 3800px;
     left: 0;
-    background-image: url('./assets/contact-form-1-desktop.svg');
+    background-image: url('./assets/contact-form-ill-1-desktop.svg');
     width: 200px;
     height: 330px;
     background-repeat: no-repeat;
     z-index: -1;
   }
 
-  .contact-form-2 {
+  .contact-form-ill-2 {
     position: absolute;
     top: 3950px;
     left: 400px;
-    background-image: url('./assets/contact-form-2-desktop.svg');
+    background-image: url('./assets/contact-form-ill-2-desktop.svg');
     width: 120px;
     height: 100px;
     background-repeat: no-repeat;
     z-index: -1;
   }
 
-  .contact-form-3 {
+  .contact-form-ill-3 {
     position: absolute;
     top: 3650px;
     right: -15px;
-    background-image: url('./assets/contact-form-3-desktop.svg');
+    background-image: url('./assets/contact-form-ill-3-desktop.svg');
     width: 200px;
     height: 500px;
     background-repeat: no-repeat;
@@ -126,7 +123,7 @@
   }
 
   .background {
-    background-image: url('./assets/header-illustration-mobile.svg');
+    background-image: url('./assets/header-ill-mobile.svg');
     background-repeat: no-repeat;
   }
 
@@ -173,11 +170,11 @@
     z-index: -1;
   }
 
-  .contact-form-mobile {
+  .contact-form-ill-mobile {
     position: absolute;
     top: 5900px;
     right: -110px;
-    background-image: url('./assets/contact-form-mobile.svg');
+    background-image: url('./assets/contact-form-ill-mobile.svg');
     width: 200px;
     height: 400px;
     background-repeat: no-repeat;
@@ -256,6 +253,7 @@
 }
 
 .welcome {
+  color: #3a4a42;
   margin: 10px;
   font-style: normal;
   font-weight: 600;
@@ -278,7 +276,101 @@
   display: flex;
 }
 
-.menu {
+/* menu */
+
+.topNav {
+  position: fixed;
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.ham {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding-right: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+.ham:hover {
+  border-radius: 5px;
+  background-color: white;
+  opacity: 0.75;
+}
+
+.menuX {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menuX:hover {
+  padding: 0;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 0.75;
+}
+
+.sideNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 101;
+  background: white;
+  width: 100%;
+  height: 100vh;
+
+  /* hide the menu above the screen by default */
+  transform: translateX(-100%);
+  transition: transform 0.2s ease;
+}
+
+.showNav {
+  transform: translateX(0);
+}
+
+.sideNav ul {
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sideNav ul li a {
+  display: block;
+  color: #3a4a42;
+  padding: 10px;
+  width: 0;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.sideNav ul li a:hover,
+.sideNav ul li a:focus {
+  color: rgb(74, 176, 210);
+}
+
+/* menu-end */
+
+/* .menu {
   padding: 5px;
   position: absolute;
   top: 18px;
@@ -286,12 +378,12 @@
   width: 40px;
   height: 40px;
   border-radius: 8px;
-}
+} */
 
-.menu:hover {
+/* .menu:hover {
   background-color: white;
   opacity: 0.75;
-}
+} */
 
 .intro {
   font-style: normal;

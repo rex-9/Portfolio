@@ -7,60 +7,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
 
 <body class="center">
     <div class="background">
         <div class="crane"></div>
         <div class="boat"></div>
-        <div class="contact-form-1"></div>
-        <div class="contact-form-2"></div>
-        <div class="contact-form-3"></div>
-        <div class="contact-form-mobile"></div>
-        <header class="mobile-nav">
-            <nav class="welcome font no-hover">Welcome</nav>
-            <nav><img class="menu pointer" src="./assets/menu.svg" alt="menu"></nav>
+        <div class="contact-form-ill-1"></div>
+        <div class="contact-form-ill-2"></div>
+        <div class="contact-form-ill-3"></div>
+        <div class="contact-form-ill-mobile"></div>
+        <header class="hide-in-desktop">
+            <nav class="topNav">
+                <nav class="welcome font no-hover">Welcome</nav>
+                <button class="ham">
+                    <img src="./assets/ham.svg" alt="ham">
+                </button>
+            </nav>
+            <nav class="sideNav">
+                <button class="menuX">
+                    <img src="./assets/x.svg" alt="cancel">
+                </button>
+                <ul>
+                    <li><a class="menuLink" href="#portfolio">Portfolio</a></li>
+                    <li><a class="menuLink" href="#about">About</a></li>
+                    <li><a class="menuLink" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
         <header class="center">
-            <div class="desktop-nav">
-                <nav class="welcome font pointer">Portfolio</nav>
-                <nav class="welcome font pointer">About</nav>
-                <nav class="welcome font pointer">Contact</nav>
-            </div>
+            <ul class="desktop-nav">
+                <li><a class="welcome font pointer" href="#portfolio">Portfolio</a></li>
+                <li><a class="welcome font pointer" href="#about">About</a></li>
+                <li><a class="welcome font pointer" href="#contact">Contact</a></li>
+            </ul>
         </header>
-        <div class="mt-100">
-            <h1 class="intro primary-color font">Hey there. I’m Rex.</h1>
-            <h2 class="intro secondary-color font">I am a full stack developer.</h2>
-            <p> I can help you build a product, feature or website.<br>
-                Look through some of my work and experience!<br>
-                If you like what you see and have a project you need coded,<br>don’t hestiate to contact me. 😉</p>
-            <div class="center">
-                <a href="">
-                    <img class="profiles" src="./assets/twitter.svg" alt="twitter">
-                </a>
-                <a href="">
-                    <img class="profiles" src="./assets/linkedin.svg" alt="linkedin">
-                </a>
-                <a href="">
-                    <img class="profiles" src="./assets/medium.svg" alt="medium">
-                </a>
-                <a href="">
-                    <img class="profiles" src="./assets/github.svg" alt="github">
-                </a>
-                <a href="">
-                    <img class="profiles" src="./assets/angellist.svg" alt="angellist">
-                </a>
+        <section id="portfolio">
+            <div class="mt-100">
+                <h1 class="intro primary-color font">Hey there. I’m Rex.</h1>
+                <h2 class="intro secondary-color font">I am a full stack developer.</h2>
+                <p> I can help you build a product, feature or website.<br>
+                    Look through some of my work and experience!<br>
+                    If you like what you see and have a project you need coded,<br>don’t hestiate to contact me. 😉</p>
+                <div class="center">
+                    <a href="">
+                        <img class="profiles" src="./assets/twitter.svg" alt="twitter">
+                    </a>
+                    <a href="">
+                        <img class="profiles" src="./assets/linkedin.svg" alt="linkedin">
+                    </a>
+                    <a href="">
+                        <img class="profiles" src="./assets/angellist.svg" alt="angellist">
+                    </a>
+                    <a href="">
+                        <img class="profiles" src="./assets/medium.svg" alt="medium">
+                    </a>
+                    <a href="">
+                        <img class="profiles" src="./assets/github.svg" alt="github">
+                    </a>
+                </div>
+                <div class="center mt-25">
+                    <img class="pointer down-arrow" src="./assets/down-arrow.svg" alt="down-arrow">
+                </div>
             </div>
-            <div class="center mt-25">
-                <img class="pointer down-arrow" src="./assets/down-arrow.svg" alt="angellist">
-            </div>
-        </div>
-        <section>
             <header class="title my-recent-works">My Recent Works</header>
             <div class="center font">
                 <div class="divider"></div>
             </div>
-            <section class="center">
+            <div class="center">
                 <div class="cards">
                     <div class="card font">
                         <div class="cover"></div>
@@ -165,9 +181,9 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
-        <section>
+        <section id="about">
             <header class="title">About Me</header>
             <p> I can help you build a product, feature or website.</p>
             <p> Look through some of my work and experience!</p>
@@ -184,7 +200,7 @@
                         <div class="center">
                             <div class="logo-title">
                                 <div class="logo-container">
-                                    <img src="./assets/languages.svg" alt="angellist">
+                                    <img src="./assets/languages.svg" alt="languages">
                                 </div>
                                 <h2>Languages</h2>
                             </div>
@@ -200,7 +216,7 @@
                         <div class="center">
                             <div class="logo-title">
                                 <div class="logo-container">
-                                    <img src="./assets/frameworks.svg" alt="angellist">
+                                    <img src="./assets/frameworks.svg" alt="frameworks">
                                 </div>
                                 <h2>Frameworks</h2>
                             </div>
@@ -217,7 +233,7 @@
                         <div class="center">
                             <div class="logo-title">
                                 <div class="logo-container">
-                                    <img src="./assets/skills.svg" alt="angellist">
+                                    <img src="./assets/skills.svg" alt="skills">
                                 </div>
                                 <h2>Languages</h2>
                             </div>
@@ -232,48 +248,48 @@
                     </div>
                 </div>
             </div>
-            <section class="contact-form">
-                <header class="title mt-25">I'm always interested in hearing<br>about new projects,
-                    so if you'd<br>like to chat please get in touch.
-                </header>
-                <footer>
-                    <div class="center mt-25">
-                        <form action="https://formspree.io/f/moqrrpoj" method="post">
-                            <input required class="input font" type="text" id="fname" placeholder="Full Name"
-                                name="fullname" maxlength="30"><br><br>
-                            <input required class="input font" type="email" id="email" placeholder="Email Address"
-                                name="email"><br><br>
-                            <textarea required class="font" id="textareaid" placeholder="Enter text here."
-                                name="textarea" rows="2" cols="50" maxlength="500"></textarea><br><br>
-                            <button class="see-project font" type="submit">Get in touch</button>
-                        </form>
-                    </div>
-                </footer>
-            </section>
-            <div class="hide-in-mobile">
-                <div class="line"></div>
-            </div>
-            <div class="center m-10">
-                <a href="">
-                    <img class="profiles" src="./assets/twitter.svg" alt="twitter">
-                </a>
-                <a href="https://www.linkedin.com/in/htet-naing-b4882a1aa/">
-                    <img class="profiles" src="./assets/linkedin.svg" alt="linkedin">
-                </a>
-                <a href="https://medium.com/@htetnaing0814">
-                    <img class="profiles" src="./assets/medium.svg" alt="medium">
-                </a>
-                <a href="https://github.com/htetnaing0814">
-                    <img class="profiles" src="./assets/github.svg" alt="github">
-                </a>
-                <a href="">
-                    <img class="profiles" src="./assets/angellist.svg" alt="angellist">
-                </a>
-            </div>
-            <div class="hide-in-desktop">
-                <p class="font center mailme">htetnaing0814@gmail.com</p>
-            </div>
         </section>
+        <section id="contact" class="contact-form">
+            <header class="title mt-25">I'm always interested in hearing<br>about new projects,
+                so if you'd<br>like to chat please get in touch.
+            </header>
+            <footer>
+                <div class="center mt-25">
+                    <form action="https://formspree.io/f/moqrrpoj" method="post">
+                        <input required class="input font" type="text" id="fname" placeholder="Full Name"
+                            name="fullname" maxlength="30"><br><br>
+                        <input required class="input font" type="email" id="email" placeholder="Email Address"
+                            name="email"><br><br>
+                        <textarea required class="font" id="textareaid" placeholder="Enter text here." name="textarea"
+                            rows="2" cols="50" maxlength="500"></textarea><br><br>
+                        <button class="see-project font" type="submit">Get in touch</button>
+                    </form>
+                </div>
+            </footer>
+        </section>
+        <div class="hide-in-mobile">
+            <div class="line"></div>
+        </div>
+        <div class="center m-10">
+            <a href="">
+                <img class="profiles" src="./assets/twitter.svg" alt="twitter">
+            </a>
+            <a href="https://www.linkedin.com/in/htet-naing-b4882a1aa/">
+                <img class="profiles" src="./assets/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="">
+                <img class="profiles" src="./assets/angellist.svg" alt="angellist">
+            </a>
+            <a href="https://medium.com/@htetnaing0814">
+                <img class="profiles" src="./assets/medium.svg" alt="medium">
+            </a>
+            <a href="https://github.com/htetnaing0814">
+                <img class="profiles" src="./assets/github.svg" alt="github">
+            </a>
+        </div>
+        <div class="hide-in-desktop">
+            <p class="font center mailme">htetnaing0814@gmail.com</p>
+        </div>
     </div>
 </body>
 
