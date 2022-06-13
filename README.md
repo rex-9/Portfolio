@@ -7,7 +7,7 @@ Rex, the full stack developer
 
 ## Live Demo
 
-[Rex's portfolio](https://htetnaing0814.github.io/Rex/)
+[Rex's portfolio](https://htetnaing0814.github.io/Portfolio/)
 
 ## Getting Started
 
@@ -25,15 +25,15 @@ To get a local copy up and running follow these simple example steps.
 
 ### Deployment
 
-Here is the online version of [Rex's portfolio](https://htetnaing0814.github.io/Rex/)
+Here is the online version of [Rex's portfolio](https://htetnaing0814.github.io/Portfolio/)
 
 ## Author
-👤 - Github: [@HtetNaing0814](https://github.com/Rex)
+👤 - Github: [@HtetNaing0814](https://github.com/Portfolio)
 
 ## 🤝 Contributing
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check [issue page](https://github.com/HtetNaing0814/Rex/issues).
+Feel free to check [issue page](https://github.com/HtetNaing0814/Portfolio/issues).
 
 ## Show your support
 Give a ⭐️ if you like this project!
