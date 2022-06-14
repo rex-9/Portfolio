@@ -1,5 +1,5 @@
 @media screen and (min-width: 768px) {
-  .hide-in-desktop {
+  .mobile {
     display: none;
   }
 
@@ -111,10 +111,17 @@
     background-repeat: no-repeat;
     z-index: -1;
   }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 768px) {
-  .hide-in-mobile {
+  .desktop {
     display: none;
   }
 
@@ -180,6 +187,15 @@
     background-repeat: no-repeat;
     z-index: -1;
   }
+
+  .close {
+    position: relative;
+    z-index: 1;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
 }
 
 .down-arrow {
@@ -215,6 +231,10 @@
 
 .m-10 {
   margin: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
 }
 
 .mt-25 {
@@ -370,20 +390,104 @@ a {
 
 /* menu-end */
 
-/* .menu {
-  padding: 5px;
-  position: absolute;
-  top: 18px;
-  right: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 8px;
-} */
+/* popup */
 
-/* .menu:hover {
-  background-color: white;
-  opacity: 0.75;
-} */
+/* The Modal (background) */
+.project {
+  display: none;
+
+  /* Hidden by default */
+  position: fixed;
+
+  /* Stay in place */
+  z-index: 1;
+
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+
+  /* Full width */
+  height: 100%;
+
+  /* Full height */
+  overflow: auto;
+
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+
+  /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.detail {
+  background-color: #fefefe;
+  margin: 15% auto;
+
+  /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 15px;
+  width: 80%;
+
+  /* Could be more or less, depending on screen size */
+}
+
+.detail .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.detail .header .headline {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  color: #172b4d;
+  text-align: start;
+}
+
+.detail .btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.detail .btn {
+  display: flex;
+  align-items: center;
+  padding: 0 10px 0 10px;
+}
+
+.detail .text {
+  text-align: start;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+/* The Close Button */
+
+.mobileX {
+  position: absolute;
+  top: 17px;
+  right: 6px;
+  z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* popup-end */
 
 .intro {
   font-style: normal;
@@ -475,7 +579,7 @@ header {
   display: grid;
   grid-template-rows: 55% 45%;
   margin: 25px;
-  height: 450px;
+  height: 500px;
   width: 330px;
   border: 2px solid #ebf0ee;
   border-radius: 25px;
@@ -502,6 +606,14 @@ header {
   margin: 15px;
 }
 
+.badge-container {
+  padding: 8px;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .language-container {
   padding: 8px;
   display: flex;
@@ -513,7 +625,7 @@ header {
   background-color: #ebf0ee;
   border-radius: 10px;
   padding: 10px;
-  margin-right: 5px;
+  margin: 0 5px 5px 0;
   font-size: 12px;
 }
 
