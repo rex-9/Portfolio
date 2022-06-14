@@ -77,57 +77,53 @@ window.onclick = function (event) {
 // Validate contact form
 
 function showMessage(input, message, type) {
-	const msg = input.parentNode.querySelector("p");
-	msg.innerText = message;
+  const msg = input.parentNode.querySelector('p');
+  msg.innerText = message;
   if (type === true) {
-    input.classList.add('success')
+    input.classList.add('success');
   } else {
-    input.classList.add('error')
+    input.classList.add('error');
   }
-	return type;
+  return type;
 }
 
 function showError(input, message) {
-	return showMessage(input, message, false);
+  return showMessage(input, message, false);
 }
 
 function showSuccess(input) {
-	return showMessage(input, "", true);
+  return showMessage(input, '', true);
 }
 
 function hasValue(input, message) {
-	if (input.value.trim() === "") {
-		return showError(input, message);
-	}
-	return showSuccess(input);
+  if (input.value.trim() === '') {
+    return showError(input, message);
+  }
+  return showSuccess(input);
 }
 
 function validateEmail(input, requiredMsg, invalidMsg) {
-	if (!hasValue(input, requiredMsg)) {
-		return false;
-	}
-	const emailRegex =
-		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (!hasValue(input, requiredMsg)) {
+    return false;
+  }
 
-	const email = input.value.trim();
-	if (!emailRegex.test(email) || email != email.toLowerCase()) {
-		return showError(input, invalidMsg);
-	}
-	return true;
+  const email = input.value.trim();
+  if (email !== email.toLowerCase()) {
+    return showError(input, invalidMsg);
+  }
+  return true;
 }
 
-const form = document.querySelector("#signup");
+const form = document.querySelector('#signup');
 
-const NAME_REQUIRED = "Please enter your name";
-const EMAIL_REQUIRED = "Please enter your email";
-const EMAIL_INVALID = "Please enter a correct email address format using only lowercase letters";
+const EMAIL_REQUIRED = 'Please enter your email';
+const EMAIL_INVALID = 'Please enter a correct email address format using only lowercase letters';
 
-form.addEventListener("submit", function (event) {
-	event.preventDefault();
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
 
-	let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
-	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
-	if (nameValid && emailValid) {
-		alert("Demo only. No form was posted.");
-	}
+  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
+  if (emailValid) {
+    document.signup.submit();
+  }
 });
