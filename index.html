@@ -28,7 +28,8 @@
                     <img class="mobile mobileX" src="./assets/x.svg" alt="cancel" />
                     <img class="desktop" src="./assets/x.svg" alt="cancel">
                 </span>
-                <img id="featuredImage" class="desktop" src="./assets/project-detail-desktop.png" alt="project detail photo for desktop">
+                <img id="featuredImage" class="desktop" src="./assets/project-detail-desktop.png"
+                    alt="project detail photo for desktop">
                 <img class="mobile" src="./assets/project-detail-mobile.png" alt="project detail photo for mobile">
                 <div class="header">
                     <p id="name" class="font headline">
@@ -36,13 +37,15 @@
                     </p>
                     <div class="desktop">
                         <div class="btn-container">
-                            <a id="liveLink" href="https://htetnaing0814.github.io/Portfolio/" class="see-project btn font">
+                            <a id="liveLink" href="https://htetnaing0814.github.io/Portfolio/"
+                                class="see-project btn font">
                                 <div class="mr-10">
                                     See Live
                                 </div>
                                 <img src="./assets/live.svg" alt="see live">
                             </a>
-                            <a id="sourceLink" href="https://github.com/HtetNaing0814/Portfolio" class="see-project btn font">
+                            <a id="sourceLink" href="https://github.com/HtetNaing0814/Portfolio"
+                                class="see-project btn font">
                                 <div class="mr-10;">
                                     See Source
                                 </div>
@@ -59,7 +62,8 @@
                     <li class="language font">Terminal</li>
                     <li class="language font">Codepen</li>
                 </ul>
-                <p id="description" class="text font">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                <p id="description" class="text font">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem
                     Ipsum has been the
                     industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
                     and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and
@@ -320,12 +324,14 @@
             </header>
             <footer>
                 <div class="center mt-25">
-                    <form action="https://formspree.io/f/moqrrpoj" method="post">
-                        <input required class="input font" type="text" id="fname" placeholder="Full Name"
-                            name="fullname" maxlength="30"><br><br>
-                        <input required class="input font" type="email" id="email" placeholder="Email Address"
-                            name="email"><br><br>
-                        <textarea required class="font" id="textareaid" placeholder="Enter text here." name="textarea"
+                    <form action="https://formspree.io/f/moqrrpoj" method="post" id="signup">
+                        <input required class="input font" type="text" id="name" placeholder="Enter Your Full Name"
+                            name="name" maxlength="30">
+                        <br><br>
+                        <input required class="input font" type="email" id="email"
+                            placeholder="Enter Your Email Address" name="email">
+                        <p class="error" style="color: red; margin: 5px;"></p>
+                        <textarea required class="font" id="textareaid" placeholder="Enter text here..." name="textarea"
                             rows="2" cols="50" maxlength="500"></textarea><br><br>
                         <button class="see-project font" type="submit">Get in touch</button>
                     </form>
