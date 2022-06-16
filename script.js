@@ -135,7 +135,7 @@ form.addEventListener('submit', (event) => {
 // Preserve data in the browser
 
 function onChanged(input) {
-  input.addEventListener('change', function () {
+  input.addEventListener('change', () => {
     const formObj = {
       nameID: nameID.value,
       email: email.value,
