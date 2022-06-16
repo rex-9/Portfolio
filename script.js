@@ -135,19 +135,17 @@ form.addEventListener('submit', (event) => {
 // Preserve data in the browser
 
 function onChanged(input) {
-  input.addEventListener('change', updateValue);
-
-  function updateValue() {
-    var formObj = {
+  input.addEventListener('change', function () {
+    const formObj = {
       nameID: nameID.value,
       email: email.value,
       textarea: textarea.value,
     };
     window.localStorage.setItem('formObj', JSON.stringify(formObj));
-  }
+  });
 }
 
-var formData = JSON.parse(window.localStorage.getItem('formObj'));
+const formData = JSON.parse(window.localStorage.getItem('formObj'));
 nameID.value = formData.nameID;
 email.value = formData.email;
 textarea.value = formData.textarea;
