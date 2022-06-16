@@ -124,14 +124,6 @@ const EMAIL_REQUIRED = 'Please enter your email';
 const EMAIL_INVALID = 'Please enter a correct email address format using only lowercase letters';
 
 form.addEventListener('submit', (event) => {
-  const formObj = {
-    nameID: nameID.value,
-    email: email.value,
-    textarea: textarea.value,
-  };
-
-  window.localStorage.setItem('formObj', JSON.stringify(formObj));
-
   event.preventDefault();
 
   const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
@@ -141,7 +133,25 @@ form.addEventListener('submit', (event) => {
 });
 
 // Preserve data in the browser
-const formData = JSON.parse(window.localStorage.getItem('formObj'));
+
+function onChanged(input) {
+  input.addEventListener('change', updateValue);
+
+  function updateValue() {
+    var formObj = {
+      nameID: nameID.value,
+      email: email.value,
+      textarea: textarea.value,
+    };
+    window.localStorage.setItem('formObj', JSON.stringify(formObj));
+  }
+}
+
+var formData = JSON.parse(window.localStorage.getItem('formObj'));
 nameID.value = formData.nameID;
 email.value = formData.email;
 textarea.value = formData.textarea;
+
+onChanged(nameID);
+onChanged(email);
+onChanged(textarea);
