@@ -1,3 +1,7 @@
+const nameID = document.getElementById('name');
+const email = document.getElementById('email');
+const textarea = document.getElementById('textarea');
+
 // Menu
 const sideNav = document.querySelector('.sideNav');
 const ham = document.querySelector('.ham');
@@ -127,3 +131,25 @@ form.addEventListener('submit', (event) => {
     document.signup.submit();
   }
 });
+
+// Preserve data in the browser
+
+function onChanged(input) {
+  input.addEventListener('change', () => {
+    const formObj = {
+      nameID: nameID.value,
+      email: email.value,
+      textarea: textarea.value,
+    };
+    window.localStorage.setItem('formObj', JSON.stringify(formObj));
+  });
+}
+
+const formData = JSON.parse(window.localStorage.getItem('formObj'));
+nameID.value = formData.nameID;
+email.value = formData.email;
+textarea.value = formData.textarea;
+
+onChanged(nameID);
+onChanged(email);
+onChanged(textarea);

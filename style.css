@@ -665,3 +665,8 @@ header {
 li {
   list-style-type: none;
 }
+
+.error {
+  color: red;
+  margin: 5px;
+}
