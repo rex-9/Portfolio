@@ -134,22 +134,28 @@ form.addEventListener('submit', (event) => {
 
 // Preserve data in the browser
 
-function onChanged(input) {
+if(!localStorage.getItem('formObj')){
+  let formObj = {
+    nameVal:'',
+    emailVal:'',
+    textVal:''
+  }
+  localStorage.setItem('formObj',JSON.stringify(formObj));
+}
+
+function onChanged(input, objVal) {
   input.addEventListener('change', () => {
-    const formObj = {
-      nameID: nameID.value,
-      email: email.value,
-      textarea: textarea.value,
-    };
-    window.localStorage.setItem('formObj', JSON.stringify(formObj));
+    const formObj = JSON.parse(localStorage.getItem('formObj'));
+    formObj[objVal] = input.value;
+    localStorage.setItem('formObj', JSON.stringify(formObj));
   });
 }
 
 const formData = JSON.parse(window.localStorage.getItem('formObj'));
-nameID.value = formData.nameID;
-email.value = formData.email;
-textarea.value = formData.textarea;
+nameID.value = formData.nameVal;
+email.value = formData.emailVal;
+textarea.value = formData.textVal;
 
-onChanged(nameID);
-onChanged(email);
-onChanged(textarea);
+onChanged(nameID, 'nameVal');
+onChanged(email, 'emailVal');
+onChanged(textarea, 'textVal');
