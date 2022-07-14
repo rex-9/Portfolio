@@ -572,7 +572,7 @@ header {
 
 .card {
   display: grid;
-  grid-template-rows: 55% 45%;
+  grid-template-rows: 45% 55%;
   margin: 25px;
   height: 500px;
   width: 330px;
@@ -593,25 +593,27 @@ header {
 .cover {
   grid-row: 1;
   background-color: #ebf0ee;
+  width: 330px;
   border-radius: 25px 25px 0 0;
 }
 
 .card-name {
   text-align: center;
-  margin: 15px;
+  width: 330px;
 }
 
 .badge-container {
   padding: 8px;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
   align-items: center;
 }
 
 .language-container {
   padding: 8px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
