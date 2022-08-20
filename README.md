@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-[Rex9 Portfolio](https://rex-9.github.io/Portfolio/)
+[Rex9](https://rex-9.github.io/Portfolio/)
 
 ## Getting Started
 
